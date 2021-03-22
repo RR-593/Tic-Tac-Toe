@@ -1,0 +1,39 @@
+Draw Board
+
+X_GET: Get "X" coordinates [x,y]
+check if [x,y] is empty
+if [x,y] is empty then
+    insert "X" onto the Board
+    draw board
+else
+    goto X_GET:
+end
+
+WIN: check winner
+if winner
+    goto EXIT:
+else
+    check draw
+    if draw
+        goto EXIT:
+    end
+
+    check turn
+    if turn is y
+        gotto Y_GET:
+    else
+        goto X_GET:
+    end
+end
+
+Y_GET: get "Y" coordinates [x,y]
+if [x,y] is empty then
+    insert "Y" onto the Board
+    draw board
+else
+    goto Y_GET:
+end
+
+goto WIN:
+
+EXIT: 

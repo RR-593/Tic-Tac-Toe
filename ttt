@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require "~/CA/Ruby/TickTackTock/game"
+
+
+#Variables
+$players = [{name:"X̲", score:0},{name:"O̲", score:0}]
+$gameon = ''
+
+until $gameon == 'n' do
+    game
+    puts "(enter 'n' to stop)"
+    print "Play again? (y/n): "
+    $gameon = gets.chomp
+end
