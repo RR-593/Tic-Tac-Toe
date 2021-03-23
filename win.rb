@@ -1,4 +1,3 @@
-
 def win(rows)
 
     #vertical/ horizontal/ diagonal check

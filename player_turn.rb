@@ -1,4 +1,4 @@
-require "./p_score_board"
+require "~/CA/Ruby/Tic-Tac-Toe/p_score_board"
 
 def player_turn(rows,player)
     exit_g = false

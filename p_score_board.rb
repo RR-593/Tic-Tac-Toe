@@ -1,4 +1,4 @@
-require "./p_board"
+require "~/CA/Ruby/Tic-Tac-Toe/p_board"
 
 def printgame(rows)
     cls

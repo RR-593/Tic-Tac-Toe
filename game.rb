@@ -1,13 +1,12 @@
-require "./win"
-require "./p_score_board"
-require "./score"
-require "./player_turn"
-require "./clear_screen"
-require "./draw"
-require "./end_game"
+require "~/CA/Ruby/Tic-Tac-Toe/win"
+require "~/CA/Ruby/Tic-Tac-Toe/p_score_board"
+require "~/CA/Ruby/Tic-Tac-Toe/score"
+require "~/CA/Ruby/Tic-Tac-Toe/player_turn"
+require "~/CA/Ruby/Tic-Tac-Toe/clear_screen"
+require "~/CA/Ruby/Tic-Tac-Toe/draw"
+require "~/CA/Ruby/Tic-Tac-Toe/end_game"
 
 def game
-    leave_game = nil
     rows = [[nil,nil,nil],
             [nil,nil,nil],
             [nil,nil,nil]
