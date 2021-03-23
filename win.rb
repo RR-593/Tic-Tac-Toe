@@ -1,10 +1,10 @@
 
-def win(rows,x)
+def win(rows)
 
-    #vertical/ horizontal check
+    #vertical/ horizontal/ diagonal check
     for i in 0..2
-        if    check_cols(rows,i) |  (check_rows(rows,i) | check_diags(rows,i))#Checks coloumns if they are equal and not nil
-            return $players[x][:name]
+        if    check_cols(rows,i) |  (check_rows(rows,i) | check_diags(rows,i))
+            return rows[i][0]
         end
     end
     return 'no one'
